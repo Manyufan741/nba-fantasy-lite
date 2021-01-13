@@ -1,0 +1,33 @@
+.home-lineup-container {
+	margin: 5ch;
+	padding: 1ch;
+	border-style: solid;
+	border-color: rgba(51, 102, 255, 0.8);
+}
+
+.player-container {
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-start;
+	align-items: center;
+	overflow-x: auto;
+}
+
+.cost-score-container {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.cost {
+	border-style: solid;
+	border-color: crimson;
+	color: red;
+}
+
+.score {
+	border-style: solid;
+	border-color: forestgreen;
+	color: green;
+}

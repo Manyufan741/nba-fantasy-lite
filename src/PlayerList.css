@@ -1,0 +1,23 @@
+.game-container {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: stretch;
+	overflow-x: auto;
+}
+
+.player-container {
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-start;
+	align-items: stretch;
+	overflow-x: auto;
+}
+
+.list-container {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: stretch;
+	overflow-x: auto;
+}

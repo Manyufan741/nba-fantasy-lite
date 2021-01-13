@@ -1,0 +1,9 @@
+.player {
+	border-style: solid;
+	border-color: red;
+}
+
+.lineup {
+	border-style: solid;
+	border-color: yellow;
+}
