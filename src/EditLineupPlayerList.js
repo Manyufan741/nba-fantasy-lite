@@ -13,6 +13,7 @@ const EditLineupPlayerList = () => {
     const dispatch = useDispatch();
     const games = useSelector(st => st.all.games);
     const date = useSelector(st => st.date["date"]);
+    console.log("date in editLineup", date);
     const allPlayers = useSelector(st => st.all.players);
     const searchedPlayers = useSelector(st => st.players["searchedPlayers"]);
     const players = (searchedPlayers ? searchedPlayers : allPlayers);
