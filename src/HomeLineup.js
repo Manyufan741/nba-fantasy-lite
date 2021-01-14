@@ -20,11 +20,16 @@ const HomeLineup = ({ lineup }) => {
     const lineupScore = useSelector(st => st.lineups.lineupScores[lineup.id]);
     const history = useHistory();
     const tmp = new Date(lineup.date);
-    const createdDate = tmp.toLocaleDateString('en-US');
-    const year = createdDate.split('/')[2];
-    const month = createdDate.split('/')[0];
-    const day = createdDate.split('/')[1];
+    // console.log("date in homelineup", tmp);
+    // const createdDate = tmp.toLocaleDateString('en-US');
+    // const year = createdDate.split('/')[2];
+    // const month = createdDate.split('/')[0];
+    // const day = createdDate.split('/')[1];
+    const year = tmp.getFullYear();
+    const month = tmp.getMonth() + 1;
+    const day = tmp.getDate();
     const fullDate = `${year}-${month}-${day}`;
+    // console.log("fullDate in homelineup", fullDate);
     const edit = () => {
         dispatch(loadDate(fullDate));
         dispatch(getAllfromApi(fullDate));
