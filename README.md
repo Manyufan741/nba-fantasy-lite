@@ -17,7 +17,7 @@ After the build folder is created:
 #### $ cp build/index.html build/200.html
 
 Then use Surge to deploy the APP:
-#### surge build nba-fantasy-lite.surge.sh
+#### $ surge build nba-fantasy-lite.surge.sh
 
 http://nba-fantasy-lite.surge.sh
 
