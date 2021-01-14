@@ -6,23 +6,41 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-### Frontend React APP is deployed using Surge
+### Frontend React APP can be deployed using Surge
 
 To define the environment variable for our frontend app. YOUR_HEROKU_BACKEND_URL should be something like https://YOUR_BACKEND_APP_NAME.herokuapp.com .
 
-In this setup, I used:
-#### $ REACT_APP_BASE_URL=https://nba-fantasy-lite-backend.herokuapp.com npm run build
+### The following steps can be used to connect this APP to backend API server and deploy it:
+1. $ REACT_APP_BASE_URL=https://nba-fantasy-lite-backend.herokuapp.com npm run build
 
-After the build folder is created:
-#### $ cp build/index.html build/200.html
+2. After the build folder is created:
+$ cp build/index.html build/200.html
 
-Then use Surge to deploy the APP:
-#### $ surge build nba-fantasy-lite.surge.sh
+3. Then use Surge to deploy the APP:
+$ surge build nba-fantasy-lite.surge.sh
 
+4. The deployed APP url:
 http://nba-fantasy-lite.surge.sh
 
 
-In the frontend directory, you can run:
+## nba-fantasy-lite APP features
+
+### In the Home page:
+
+#### Users can select a date and go to see the NBA games list of that date
+#### The APP will show the lineups of the selected date. Users can edit or remove these lineups.
+#### If there are lineups shown, users can click the "Calculate" button to update the players' performance based on their real-time performance in NBA games.
+
+### In the Gamelist page:
+
+#### Users can see the game list of a selected date
+
+### In the PlayerList page:
+
+#### Users are given a budget of 200 dollars. It can be used to select players to form a lineup. Each player cost differently based on his seasonal average performance.
+#### Users can form a lineup of up to 10 players as well as within the given budget. The lineup can be submitted after the users have finalized it. Once a lineup is submitted, it'd be shown in the homepage when you select the corresponding date.
+
+## In this project directory, you can run:
 
 ### `npm start`
 
